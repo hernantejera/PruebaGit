@@ -4,7 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hola , Mundo!");
+            var persona = new Persona()
+            {
+                Nombre = "Eduardo",
+                Apellido = "Citelli",
+
+            };
+
+           var saludo = persona.Saludar();
+            Console.WriteLine($"{saludo}");
         }
     }
 }
